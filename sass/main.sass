@@ -1,0 +1,639 @@
+@import '_basic-settings.sass'
+@import '_fonts.scss'
+@import '_slick.scss'
+
+//------------------------------------------Main-----------------------------------------------------------
+
+
+.top-menu
+	width: 100%
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	list-style: none
+
+.menu
+	&__li
+		margin-left: 70px
+	&__link
+		font-size: 1.6rem
+		text-transform: uppercase
+	&__burger
+		width: 33px
+		height: 2px
+		border: none
+		background-color: #fff
+		padding: 0
+		margin-left: 25px
+		&:before
+			content: ''
+			display: block
+			width: 33px
+			height: 2px
+			background-color: #fff
+			margin-top: 7px
+		&:after
+			content: ''
+			display: block
+			width: 33px
+			height: 2px
+			background-color: #fff
+			margin-top: -18px
+
+.header
+	position: relative
+	overflow: hidden
+	width: 100%
+	&__item
+		width: 100%
+		height: 1050px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		justify-content: center
+		position: relative
+	&__bg
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		z-index: -2
+		background-color: #1E1F23
+		img
+			display: block
+			margin: 0 auto
+
+.btn
+	border: 1px solid #fff
+	background-color: transparent
+	border-radius: 40px
+	color: #fff
+
+.slick
+	&-prev
+		margin-right: 63px
+	&-next
+		transform: rotate(180deg)
+	&-arrow
+		width: 33px
+		height: 22px
+		position: absolute
+		right: 22%
+		top: 56%
+		z-index: 7
+		background-color: transparent
+		background: url('../img/Vector.svg')
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+		border: none
+		color: transparent
+		&:focus,&:active
+			outline: none
+
+.hero
+	width: 100%
+	height: 1050px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	justify-content: center
+	&__title
+		margin: 0
+		font-size: 10rem
+		line-height: 119px
+		display: block
+		text-transform: uppercase
+	&__item
+		margin-left: 133px
+		&:active
+			outline: none
+		&:focus
+			outline: none
+	&__subtitle
+		display: block
+		font-size: 2.4rem
+		line-height: 24px
+		margin: 55px 0
+	&__dots
+		padding: 0
+		position: absolute
+		bottom: 130px
+		left: 50%
+		transform: translateX(-50%)
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		li
+			margin-right: 12px
+			width: 18px
+			height: 18px
+			display: block
+			border: none
+			background: linear-gradient(0deg, #636466, #636466), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF
+			border-radius: 50%
+			&.slick-active
+				background: #fff
+			&:last-child
+				margin-right: 0
+		button
+			display: none
+	&__btn
+		font-size: 2.4rem
+		padding: 26px 29px 30px 37px
+
+.nav
+	width: 100%
+	background-color: transparent
+	position: absolute
+	top: 15px
+	z-index: 5
+	&__wrap
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+	&__logo
+		width: 274px
+		height: 58px
+	&__item
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		align-items: center
+
+.section__title
+	font-size: 50px
+	margin: 0
+	margin-bottom: 70px
+	&:after
+		content: ''
+		display: block
+		width: 100%
+		height: 0.5px
+		background-color: #fff
+		margin-top: 47px
+		margin-left: -50%
+
+.steps
+	width: 100%
+	background-color: #1E1F23
+	&__wrap
+		border-left: 0.5px solid #fff
+		padding: 100px 25px 200px
+		max-width: 1000px
+		width: 100%
+		margin: 0 auto
+	&__content
+		margin: 0 auto
+		max-width: 910px
+		width: 100%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		flex-wrap: wrap
+	&__item
+		margin: 50px auto
+		flex-basis: 33%
+		min-height: 206px
+		position: relative
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+	&__itemtitle
+		text-transform: uppercase
+		margin: 0
+		margin-bottom: 8px
+	&__itemdescription
+		display: block
+		max-width: 150px
+		line-height: 16px
+	&__itembg
+		position: absolute
+		top: 27%
+		left: 0
+		width: 100%
+		height: 100%
+	&__itemcontent
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+	&__itemimg
+		display: block
+		margin-right: 16px
+
+.projects
+	width: 100%
+	background-color: #fff
+	&__wrap
+		width: 100%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__content
+		width: 100%
+		max-width: 1230px
+		margin: 0 auto
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		flex-wrap: wrap
+	&__title
+		font-size: 5rem
+		color: #1E1F23
+		margin: 130px 0 78px
+		font-family: 'Gilroy Bold'
+	&__item
+		width: 30%
+		margin: 0 auto
+	&__imgblock
+		width: 100%
+		position: relative
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+	&__showAll
+		color: #1E1F23
+		font-size: 2rem
+		display: block
+		margin: 90px auto
+		text-decoration: underline
+		border: none
+		background-color: transparent
+	&__item-hover
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		background: rgba(196, 196, 196, 0.5)
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		justify-content: center
+		opacity: 0
+		transition: all .3s 
+		&:hover
+			opacity: 1
+	&__btn
+		display: block
+		color: #000
+		font-size: 1.8rem
+		margin: 0 auto
+		padding: 24px 52px 
+		border-radius: 40px
+		border: 1px solid rgba(255, 255, 255, 0.59)
+		background: rgba(255, 255, 255, 0.59)
+	&__itemsubtitle
+		display: block
+		color: #1E1F23
+		margin: 22px 0
+	&__itemtitle
+		margin: 0
+		color: #000
+		font-size: 2.4rem
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		flex-wrap: wrap
+		span
+			display: block
+			
+.shortAbout
+	width: 100%
+	overflow: hidden
+	position: relative
+	&__title
+		margin: 90px 0 110px
+		padding-left: 15px
+	&__bg
+		position: absolute
+		z-index: -10
+		width: 100%
+		height: 100%
+		background-color: #040404
+		img
+			display: block
+			margin: 0 auto
+			height: 100%
+			width: 100%
+	&__wrap
+		width: 100%
+		margin: 0 auto
+		max-width: 900px
+		border-left: 0.5px solid #fff
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		justify-content: center
+	&__content
+		width: 100%
+		padding-bottom: 80px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		justify-content: center
+		flex-wrap: wrap
+		align-items: center
+	&__item
+		display: inline-block
+		margin: 0
+		&:last-child
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			margin-left: 20px
+	&__text
+		display: inline-block
+		max-width: 250px
+		line-height: 16px
+		margin: 35px auto
+		padding-left: 40px
+	&__link
+		font-size: 1.8rem
+		display: inline-block
+		margin: 0 auto
+		margin-top: 14px
+		padding: 21px 34px 21px 53px
+		border-radius: 40px
+		border: 1px solid rgba(255, 255, 255, 0.59)
+	&__modal
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		justify-content: center
+		max-width: 640px
+		min-height: 550px
+		width: 100%
+		position: relative
+	&__img
+		display: inline-block
+		margin: 0 auto
+		width: 75%
+		img
+			width: 100%
+			height: auto
+	&__reason
+		font-size: 1.8rem
+		line-height: 21px
+		text-align: center
+	&__reason1
+		position: absolute
+		left: 0
+		top: 0
+	&__reason2
+		position: absolute
+		top: 0
+		right: 0
+	&__reason3
+		position: absolute
+		bottom: 0
+		left: 0
+	&__arrow1
+		position: absolute
+		left: 3%
+		top: 13%
+		transform: rotate(270deg) scale(1, -1)
+		width: 100px
+		img
+			width: 100%
+			height: auto
+
+	&__arrow2
+		position: absolute
+		top: 16%
+		right: 14%
+		transform: rotate(290deg)
+		width: 100px
+		img
+			width: 100%
+			height: auto
+
+	&__arrow3
+		position: absolute
+		bottom: 10%
+		left: 17%
+		transform: rotate(140deg) scale(1, -1)
+		width: 100px
+		img
+			width: 100%
+			height: auto
+	&__arrow4
+		position: absolute
+		bottom: 15%
+		right: -10%
+		width: 100px
+		img
+			width: 100%
+			height: auto
+
+.footer
+	width: 100%
+	background-color: #1E1F23
+	padding-top: 60px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	&__content
+		width: 100%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: flex-start
+	&__blocklist
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-basis: 60%
+		flex-direction: row
+		justify-content: space-around
+	&__item
+		flex-basis: 50%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		&:first-child
+			flex-basis: 40%
+			flex-direction: column
+			align-items: flex-start
+			justify-content: flex-start
+	&__description
+		max-width: 485px
+		font-size: 1.8rem
+		margin: 60px 0
+	&__list
+		padding: 0
+		margin: 0
+		list-style: none
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+	&__listtitle
+		margin: 0
+		font-size: 2.4rem
+		margin-bottom: 26px
+	&__li
+		margin: 10px 0
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		align-items: center
+	&__link
+		font-size: 1.6rem
+		color: #F2F2F2
+	&__contacts-town
+		&:before
+			content: url(../img/footer__map-icon.svg)
+			display: block
+			width: 21px
+			height: 21px
+			background-color: transparent
+			margin-right: 7px
+	&__contacts-address
+		&:before
+			content: url(../img/footer__location-icon.svg)
+			display: block
+			width: 21px
+			height: 21px
+			background-color: transparent
+			margin-right: 7px
+	&__contacts-numb
+		&:before
+			content: url(../img/footer__phone-icon.svg)
+			display: block
+			width: 21px
+			height: 21px
+			background-color: transparent
+			margin-right: 7px
+	&__contacts-email
+		&:before
+			content: url(../img/footer__email-icon.svg)
+			display: block
+			width: 21px
+			height: 21px
+			background-color: transparent
+			margin-right: 7px
+	&__copy
+		border-top: 1px solid #FFFFFF
+		width: 100%
+		padding: 31px 0
+	&__copywrap
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: center
+	&__copyblock
+		font-size: 1.8rem
+		font-family: 'Gilroy Bold'
+		span
+			display: block
+			margin-bottom: 19px
+			font-size: 1.4rem
+			font-family: 'Gilroy Regular'
+
+
+
+
+//-----------------------------------------MediaQuery------------------------------------------------------
+@import '_mediaq.sass'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
