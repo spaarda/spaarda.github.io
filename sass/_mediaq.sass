@@ -1,7 +1,32 @@
+@media screen and (max-width: 1024px)
+	html
+		font-size: 7.5px
+	.hero
+		&__title
+			margin-top: 135px
+			line-height: 85px
+			font-size: 9rem
+		&__btn
+			margin-bottom: 40px
+
+	.header
+		&__item
+			min-height: 800px
+
 @media screen and (max-width: 768px)
 	.container
 		width: 100%
 		padding: 0 60px
+	.header
+		&__item
+			min-height: 591px
+
+	.top-menu
+		justify-content: flex-end
+		&__li
+			display: none
+			&:nth-child(3n)
+				display: inline-block
 
 	.steps
 		&__title
@@ -17,6 +42,10 @@
 		&__itemcontent
 			justify-content: center
 	
+	.shortAbout
+		&__wrap
+			border: none
+
 	.slick
 		&-arrow
 			right: 60px
@@ -25,19 +54,20 @@
 	.hero
 		width: 100%
 		&__title
-			font-size: 4.8rem
 			line-height: 47px
+			margin-top: 150px
 		&__subtitle
-			font-size: 1.8rem
 			line-height: 21px
 		&__btn
 			font-size: 1.4rem
 			padding: 20px 31px
+			margin-bottom: 90px
 		&__item
 			margin: 0
+		&__dots
+			bottom: 5%
 
 	.section__title
-		font-size: 3rem
 		text-align: center
 		&:after
 			background-color: transparent
