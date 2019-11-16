@@ -1,6 +1,7 @@
 @import '_basic-settings.sass'
 @import '_fonts.scss'
 @import '_slick.scss'
+@import '_modal.sass'
 
 //------------------------------------------Main-----------------------------------------------------------
 
@@ -15,8 +16,9 @@
 	display: -o-flex
 	display: flex
 	flex-direction: row
-	justify-content: center
+	justify-content: flex-end
 	align-items: center
+	padding-right: 65px
 	&__li
 		display: inline-block
 		margin-left: 70px
@@ -26,6 +28,10 @@
 		font-size: 1.6rem
 		text-transform: uppercase
 	&__burger
+		position: absolute
+		top: 22px
+		right: 5px
+		z-index: 3
 		display: inline-block
 		width: 33px
 		height: 2px
@@ -47,7 +53,22 @@
 			height: 2px
 			background-color: #fff
 			margin-top: -18px
-
+		&-active
+			background-color: #000
+			height: 0
+			&:after
+				transition: all .3s
+				margin: 0
+				margin-top: -3px
+				height: 3px
+				background-color: #000
+				transform: rotate(45deg)
+			&:before
+				transition: all .3s
+				margin: 0
+				height: 3px
+				background-color: #000
+				transform: rotate(135deg)
 .header
 	position: relative
 	overflow: hidden
@@ -160,7 +181,7 @@
 	position: absolute
 	top: 20px
 	left: 0
-	z-index: 5
+	z-index: 15
 	&__wrap
 		width: 100%
 		display: -webkit-flex
@@ -176,6 +197,7 @@
 		height: 58px
 	&__item
 		width: 50%
+		position: relative
 		display: -webkit-flex
 		display: -moz-flex
 		display: -ms-flex
