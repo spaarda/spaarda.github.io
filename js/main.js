@@ -4,6 +4,6 @@ $('.header__slider').slick({
 	draggable: false,
 });
 
-$('.top-menu__burger').on('click' , function() {
+$('.burger-btn').on('click' , function() {
 	$('.modal').toggleClass('modal_active');
 });

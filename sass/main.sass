@@ -5,6 +5,46 @@
 
 //------------------------------------------Main-----------------------------------------------------------
 
+.burger-btn
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	justify-content: center
+	width: 60px
+	height: 60px
+	background-color: transparent
+	&_text
+		display: flex
+		flex-direction: column
+		justify-content: center
+		color: #000
+		font-size: 1.8rem
+		font-weight: 600
+		margin-right: 20px
+	&__span
+		width: 33px
+		height: 2px
+	&_disabled
+		span		
+			margin: 3px auto
+			display: block
+			background-color: #fff
+	&_active
+		span
+			margin: 3px auto
+			display: block
+			background-color: #000
+			height: 0
+			&:first-child
+				height: 2px
+				transform: rotate(45deg)
+				margin-bottom: -11px
+			&:last-child
+				height: 2px
+				transform: rotate(135deg)
 
 .top-menu
 	list-style: none
@@ -27,48 +67,7 @@
 		white-space: nowrap
 		font-size: 1.6rem
 		text-transform: uppercase
-	&__burger
-		position: absolute
-		top: 22px
-		right: 5px
-		z-index: 3
-		display: inline-block
-		width: 33px
-		height: 2px
-		border: none
-		background-color: #fff
-		padding: 0
-		margin-left: 25px
-		&:before
-			content: ''
-			display: block
-			width: 33px
-			height: 2px
-			background-color: #fff
-			margin-top: 7px
-		&:after
-			content: ''
-			display: block
-			width: 33px
-			height: 2px
-			background-color: #fff
-			margin-top: -18px
-		&-active
-			background-color: #000
-			height: 0
-			&:after
-				transition: all .3s
-				margin: 0
-				margin-top: -3px
-				height: 3px
-				background-color: #000
-				transform: rotate(45deg)
-			&:before
-				transition: all .3s
-				margin: 0
-				height: 3px
-				background-color: #000
-				transform: rotate(135deg)
+
 .header
 	position: relative
 	overflow: hidden
