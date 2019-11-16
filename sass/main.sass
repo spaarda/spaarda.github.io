@@ -16,11 +16,16 @@
 	width: 60px
 	height: 60px
 	background-color: transparent
+	&_text_nav
+		color: #fff
+	&_text_modal
+		color: #000
 	&_text
 		display: flex
+		width: auto
+		height: auto
 		flex-direction: column
 		justify-content: center
-		color: #000
 		font-size: 1.8rem
 		font-weight: 600
 		margin-right: 20px
@@ -58,7 +63,6 @@
 	flex-direction: row
 	justify-content: flex-end
 	align-items: center
-	padding-right: 65px
 	&__li
 		display: inline-block
 		margin-left: 70px
@@ -194,6 +198,16 @@
 	&__logo
 		width: 274px
 		height: 58px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		justify-content: center
+		img
+			width: 100%
+			height: auto
 	&__item
 		width: 50%
 		position: relative

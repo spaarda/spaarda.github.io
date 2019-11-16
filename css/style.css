@@ -112,10 +112,11 @@ a {
   z-index: 10;
   left: 0;
   width: 100%;
-  min-height: 900px;
+  height: 100vh;
   background-color: #fff;
   transform: translateY(-100%);
   transition: all .3s;
+  overflow: hidden;
   opacity: 0; }
   .modal_active {
     transition: all .3s;
@@ -143,7 +144,8 @@ a {
         display: block; }
   .modal__wrap {
     width: 100%;
-    min-height: 900px;
+    height: 100vh;
+    padding-top: 40px;
     position: relative;
     display: -moz-flex;
     display: -ms-flex;
@@ -158,10 +160,33 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; }
-  .modal__img {
-    width: 864px;
-    height: auto; }
+    align-items: center;
+    padding: 0 5%; }
+  .modal__logo {
+    width: 274px;
+    height: 58px;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .modal__logo img {
+      width: 100%;
+      height: auto; }
+  .modal__item {
+    width: 40%; }
+    .modal__item:last-child {
+      width: 60%;
+      margin-top: 32%;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .modal__item img {
+      margin: 0 auto; }
   .modal__nav {
     padding: 0;
     display: -moz-flex;
@@ -172,7 +197,8 @@ a {
     flex-direction: column;
     min-height: 360px; }
   .modal__li {
-    display: inline-block; }
+    display: inline-block;
+    white-space: nowrap; }
   .modal__submenu {
     margin-top: 15px;
     min-height: 120px;
@@ -194,8 +220,10 @@ a {
   .modal__span {
     display: flex;
     flex-direction: row;
+    align-items: center;
     color: #000;
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    white-space: nowrap; }
     .modal__span a {
       color: #000; }
     .modal__span_email:before {
@@ -232,11 +260,16 @@ a {
   width: 60px;
   height: 60px;
   background-color: transparent; }
+  .burger-btn_text_nav {
+    color: #fff; }
+  .burger-btn_text_modal {
+    color: #000; }
   .burger-btn_text {
     display: flex;
+    width: auto;
+    height: auto;
     flex-direction: column;
     justify-content: center;
-    color: #000;
     font-size: 1.8rem;
     font-weight: 600;
     margin-right: 20px; }
@@ -270,8 +303,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
-  padding-right: 65px; }
+  align-items: center; }
   .top-menu__li {
     display: inline-block;
     margin-left: 70px; }
@@ -404,7 +436,16 @@ a {
     align-items: center; }
   .nav__logo {
     width: 274px;
-    height: 58px; }
+    height: 58px;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .nav__logo img {
+      width: 100%;
+      height: auto; }
   .nav__item {
     width: 50%;
     position: relative;
@@ -832,8 +873,7 @@ a {
     font-size: 7.5px; }
   .hero__title {
     margin-top: 135px;
-    line-height: 85px;
-    font-size: 9rem; }
+    line-height: 85px; }
   .hero__btn {
     margin-bottom: 40px; }
   .header__item {
@@ -843,8 +883,14 @@ a {
   .container {
     width: 100%;
     padding: 0 60px; }
+  .burger-btn_text {
+    margin-right: 15px; }
+  .burger-btn_text_modal {
+    margin-right: 0; }
   .header__item {
-    min-height: 591px; }
+    min-height: 671px; }
+  .modal__item:last-child {
+    opacity: 0.45; }
   .top-menu {
     justify-content: flex-end; }
     .top-menu__li {
@@ -869,7 +915,7 @@ a {
   .hero {
     width: 100%; }
     .hero__title {
-      line-height: 47px;
+      line-height: 75px;
       margin-top: 150px; }
     .hero__subtitle {
       line-height: 21px; }
@@ -901,3 +947,41 @@ a {
     margin-bottom: 43px; }
   .footer__description {
     display: none; } }
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 6px; }
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px; }
+  .modal__logo {
+    width: 144px; }
+  .modal__item:last-child {
+    display: none; }
+  .nav {
+    background-color: #1E1F23; }
+  .header__item {
+    min-height: 580px; }
+  .slick-prev {
+    margin-right: 80%; }
+  .slick-arrow {
+    width: 40px;
+    height: 27px;
+    top: 60%;
+    right: 4%; }
+  .hero {
+    padding: 0 15px; }
+    .hero__title {
+      line-height: 43px;
+      font-size: 5rem;
+      margin-top: 130px; }
+    .hero__subtitle {
+      margin: 14px 0 120px;
+      font-size: 2.2rem;
+      line-height: 16px; }
+    .hero__btn {
+      display: block;
+      font-size: 3rem;
+      padding: 22px 36px;
+      margin: 0 auto; } }

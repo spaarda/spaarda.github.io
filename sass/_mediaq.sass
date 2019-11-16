@@ -5,7 +5,6 @@
 		&__title
 			margin-top: 135px
 			line-height: 85px
-			font-size: 9rem
 		&__btn
 			margin-bottom: 40px
 
@@ -17,9 +16,21 @@
 	.container
 		width: 100%
 		padding: 0 60px
+
+	.burger-btn
+		&_text
+			margin-right: 15px
+		&_text_modal
+			margin-right: 0
+
 	.header
 		&__item
-			min-height: 591px
+			min-height: 671px
+
+	.modal
+		&__item
+			&:last-child
+				opacity: 0.45
 
 	.top-menu
 		justify-content: flex-end
@@ -50,11 +61,10 @@
 		&-arrow
 			right: 60px
 
-
 	.hero
 		width: 100%
 		&__title
-			line-height: 47px
+			line-height: 75px
 			margin-top: 150px
 		&__subtitle
 			line-height: 21px
@@ -92,3 +102,53 @@
 				margin-bottom: 43px
 		&__description
 			display: none
+
+@media screen and (max-width: 425px)
+	html
+		font-size: 6px
+
+	.container
+		width: 100%
+		max-width: 100%
+		padding: 0 10px
+	
+	.modal
+		&__logo
+			width: 144px
+		&__item
+			&:last-child
+				display: none
+
+	.nav
+		background-color: #1E1F23
+	
+	.header
+		&__item
+			min-height: 580px
+	.slick
+		&-prev
+			margin-right: 80%
+		&-next
+		&-arrow
+			width: 40px
+			height: 27px
+			top: 60%
+			right: 4%
+
+	.hero
+		padding: 0 15px
+		&__title
+			line-height: 43px
+			font-size: 5rem
+			margin-top: 130px
+		&__subtitle
+			margin: 14px 0 120px
+			font-size: 2.2rem
+			line-height: 16px
+		&__btn
+			display: block
+			font-size: 3rem
+			padding: 22px 36px
+			margin: 0 auto
+
+
