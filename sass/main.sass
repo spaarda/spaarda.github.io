@@ -448,13 +448,13 @@
 		margin: 35px 0
 	&__link
 		font-size: 1.8rem
-		display: block
+		display: inline-block
 		margin: 0
 		margin-top: 14px
 		padding: 21px 34px
 		border-radius: 40px
 		border: 1px solid rgba(255, 255, 255, 0.59)
-	&__modal
+	&__model
 		display: -webkit-flex
 		display: -moz-flex
 		display: -ms-flex
@@ -477,55 +477,40 @@
 		font-size: 1.8rem
 		line-height: 21px
 		text-align: center
-	&__reason1
 		position: absolute
+	&__reason_1
 		left: 0
 		top: 0
-	&__reason2
-		position: absolute
+	&__reason_2
 		top: 0
 		right: 0
-	&__reason3
-		position: absolute
+	&__reason_3
 		bottom: 0
 		left: 0
-	&__arrow1
+	&__arrow
+		width: 100px
 		position: absolute
+		img
+			width: 100%
+			height: auto
+	&__arrow_1
 		left: 3%
 		top: 13%
 		transform: rotate(270deg) scale(1, -1)
-		width: 100px
-		img
-			width: 100%
-			height: auto
 
-	&__arrow2
-		position: absolute
+	&__arrow_2
 		top: 16%
 		right: 14%
 		transform: rotate(290deg)
-		width: 100px
-		img
-			width: 100%
-			height: auto
 
-	&__arrow3
-		position: absolute
+	&__arrow_3
 		bottom: 10%
 		left: 17%
 		transform: rotate(140deg) scale(1, -1)
-		width: 100px
-		img
-			width: 100%
-			height: auto
-	&__arrow4
-		position: absolute
+	
+	&__arrow_4
 		bottom: 15%
 		right: -10%
-		width: 100px
-		img
-			width: 100%
-			height: auto
 
 .footer
 	width: 100%
