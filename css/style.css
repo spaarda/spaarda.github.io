@@ -985,5 +985,16 @@ a {
       font-size: 3rem;
       padding: 22px 36px;
       margin: 0 auto; }
+  .steps__wrap {
+    padding: 28px 0 58px; }
   .steps__content {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .steps__item {
+    margin: 0 auto; }
+  .steps__title {
+    font-size: 3.5rem;
+    margin: 0; }
+    .steps__title span {
+      display: block; }
+    .steps__title:after {
+      margin: 0; } }
