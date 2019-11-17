@@ -434,6 +434,8 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
+  .nav__mobile {
+    display: none; }
   .nav__logo {
     width: 274px;
     height: 58px;
@@ -960,7 +962,34 @@ a {
   .modal__item:last-child {
     display: none; }
   .nav {
-    background-color: #1E1F23; }
+    background-color: #1E1F23;
+    top: 0; }
+    .nav__mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 4px; }
+      .nav__mobile:after {
+        content: '';
+        display: block;
+        width: 550px;
+        height: 1px;
+        background-color: #fff;
+        margin-top: 5px;
+        margin-left: -40px; }
+    .nav__number {
+      font-size: 2.5rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .nav__number:before {
+        content: url("../img/nav__phone.svg");
+        display: block;
+        background-color: transparent;
+        width: 15px;
+        height: 15px;
+        margin-right: 5px; }
   .header__item {
     min-height: 580px; }
   .slick-prev {
@@ -997,4 +1026,26 @@ a {
     .steps__title span {
       display: block; }
     .steps__title:after {
-      margin: 0; } }
+      margin: 0; }
+  .projects__content {
+    flex-direction: column; }
+  .projects__title {
+    margin: 55px 0 38px;
+    font-size: 3.5rem; }
+  .projects__item {
+    width: 90%;
+    margin-bottom: 50px; }
+    .projects__item:last-child {
+      display: block;
+      margin-bottom: 0; }
+  .projects__itemtitle {
+    font-size: 4rem; }
+  .projects__itemsubtitle {
+    font-size: 2.3rem;
+    margin: 7px 0 12px; }
+  .projects__btn {
+    font-size: 2.5rem;
+    padding: 18px 35px; }
+  .projects__showAll {
+    margin: 34px auto 58px;
+    font-size: 2.5rem; } }

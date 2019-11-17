@@ -121,10 +121,41 @@
 
 	.nav
 		background-color: #1E1F23
+		top: 0
+		&__mobile
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			margin-top: 4px
+			&:after
+				content: ''
+				display: block
+				width: 550px
+				height: 1px
+				background-color: #fff
+				margin-top: 5px
+				margin-left: -40px
+		&__number
+			font-size: 2.5rem
+			display: flex
+			flex-direction: row
+			align-items: center
+			&:before
+				content: url('../img/nav__phone.svg')
+				display: block
+				background-color: transparent
+				width: 15px
+				height: 15px
+				margin-right: 5px
+
+
+
 	
 	.header
 		&__item
 			min-height: 580px
+	
 	.slick
 		&-prev
 			margin-right: 80%
@@ -166,3 +197,26 @@
 			&:after
 				margin: 0
 
+	.projects
+		&__content
+			flex-direction: column
+		&__title
+			margin: 55px 0 38px
+			font-size: 3.5rem
+		&__item
+			width: 90%
+			margin-bottom: 50px
+			&:last-child
+				display: block
+				margin-bottom: 0
+		&__itemtitle
+			font-size: 4rem
+		&__itemsubtitle
+			font-size: 2.3rem
+			margin: 7px 0 12px
+		&__btn
+			font-size: 2.5rem
+			padding: 18px 35px
+		&__showAll
+			margin: 34px auto 58px
+			font-size: 2.5rem
