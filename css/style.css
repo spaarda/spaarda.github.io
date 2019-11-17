@@ -984,4 +984,6 @@ a {
       display: block;
       font-size: 3rem;
       padding: 22px 36px;
-      margin: 0 auto; } }
+      margin: 0 auto; }
+  .steps__content {
+    flex-direction: column; } }
