@@ -1,0 +1,123 @@
+.footer
+	width: 100%
+	background-color: #1E1F23
+	padding-top: 60px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	&__content
+		width: 100%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: flex-start
+	&__logo
+		width: 274px
+		height: 58px
+		img
+			width: 100%
+			height: 100%
+			
+	&__blocklist
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-basis: 60%
+		flex-direction: row
+		justify-content: space-around
+	&__item
+		flex-basis: 50%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		&:first-child
+			flex-basis: 40%
+			flex-direction: column
+			align-items: flex-start
+			justify-content: flex-start
+	&__description
+		max-width: 485px
+		font-size: 1.8rem
+		margin: 60px 0
+	&__list
+		padding: 0
+		margin: 0
+		list-style: none
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+	&__listtitle
+		font-size: 2.4rem
+		margin-bottom: 26px
+	&__li
+		margin: 10px 0
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		align-items: center
+	&__link
+		font-size: 1.6rem
+		color: #F2F2F2
+	&__contacts
+		&:before
+			width: 21px
+			height: 21px
+			display: block
+			background-color: transparent
+			margin-right: 7px
+	&__contacts-town
+		&:before
+			content: url(../img/footer__map-icon.svg)
+	&__contacts-address
+		&:before
+			content: url(../img/footer__location-icon.svg)
+	&__contacts-numb
+		&:before
+			content: url(../img/footer__phone-icon.svg)
+	&__contacts-email
+		&:before
+			content: url(../img/footer__email-icon.svg)
+	&__copy
+		border-top: 1px solid #FFFFFF
+		width: 100%
+		padding: 31px 0
+	&__copywrap
+		width: 100%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: center
+	&__copyblock
+		font-size: 1.8rem
+		font-family: 'Gilroy Bold'
+		span
+			display: block
+			margin-bottom: 19px
+			font-size: 1.4rem
+			font-family: 'Gilroy Regular'
