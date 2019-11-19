@@ -2,8 +2,16 @@
 @import '_fonts.scss'
 @import '_slick.scss'
 @import '_modal.sass'
+@import '_title.sass'
+@import '_text.sass'
 
 //------------------------------------------Main-----------------------------------------------------------
+.a
+	text-decoration: none
+	&_color_white
+		color: #fff
+	&_color_black
+		color: #000
 
 .burger-btn
 	display: -webkit-flex
@@ -16,10 +24,6 @@
 	width: 60px
 	height: 60px
 	background-color: transparent
-	&_text_nav
-		color: #fff
-	&_text_modal
-		color: #000
 	&_text
 		display: flex
 		width: auto
@@ -27,21 +31,17 @@
 		flex-direction: column
 		justify-content: center
 		font-size: 1.8rem
-		font-weight: 600
-		margin-right: 20px
+		margin-right: 25px
 	&__span
 		width: 33px
 		height: 2px
-	&_disabled
-		span		
-			margin: 3px auto
-			display: block
+		margin: 3px 0
+		&_bg-color_white
 			background-color: #fff
+		&_bg-color_black
+			background-color: #000
 	&_active
 		span
-			margin: 3px auto
-			display: block
-			background-color: #000
 			height: 0
 			&:first-child
 				height: 2px
@@ -103,7 +103,10 @@
 	border: 1px solid #fff
 	background-color: transparent
 	border-radius: 40px
-	color: #fff
+	&_color_white
+		color: #fff
+	&_color_black
+		color: #000
 
 .slick
 	&-prev
@@ -130,7 +133,6 @@
 .hero
 	width: 100%
 	&__title
-		margin: 0
 		margin-top: 210px
 		font-size: 10rem
 		line-height: 119px
@@ -138,6 +140,8 @@
 		text-transform: uppercase
 	&__item
 		margin-left: 7%
+		position: relative
+		height: 780px
 		&:active
 			outline: none
 		&:focus
@@ -174,19 +178,18 @@
 		button
 			display: none
 	&__btn
+		position: absolute
+		bottom: 25%
+		left: 0
 		font-size: 2.4rem
 		padding: 26px 29px 30px
-		margin-bottom: 250px
 
 .nav
 	width: 100%
 	background-color: transparent
-	position: absolute
-	top: 20px
-	left: 0
-	z-index: 15
 	&__wrap
 		width: 100%
+		padding-top: 20px
 		display: -webkit-flex
 		display: -moz-flex
 		display: -ms-flex
@@ -195,6 +198,11 @@
 		flex-direction: row
 		justify-content: space-between
 		align-items: center
+	&_position_absolute
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 15
 	&__mobile
 		display: none
 	&__logo
@@ -223,7 +231,6 @@
 
 .section__title
 	font-size: 50px
-	margin: 0
 	margin-bottom: 70px
 	&:after
 		content: ''
@@ -269,7 +276,6 @@
 		justify-content: flex-end
 	&__itemtitle
 		text-transform: uppercase
-		margin: 0
 		margin-bottom: 8px
 	&__itemdescription
 		display: block
@@ -320,7 +326,6 @@
 		font-size: 5rem
 		color: #1E1F23
 		margin: 130px 0 78px
-		font-family: 'Gilroy Bold'
 	&__item
 		width: 30%
 		margin: 0 auto
@@ -371,7 +376,6 @@
 		color: #1E1F23
 		margin: 22px 0
 	&__itemtitle
-		margin: 0
 		color: #000
 		font-size: 2.4rem
 		display: -webkit-flex
@@ -579,7 +583,6 @@
 		flex-direction: column
 		align-items: flex-start
 	&__listtitle
-		margin: 0
 		font-size: 2.4rem
 		margin-bottom: 26px
 	&__li
@@ -637,7 +640,62 @@
 			font-size: 1.4rem
 			font-family: 'Gilroy Regular'
 
+//-----------------------------------------Contacts--------------------------------------------------------
+.contacts-header
+	color: #000
 
+.contacts
+	color: #000
+	&__wrap
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		align-items: center
+		flex-wrap: wrap
+	&__item
+		flex-basis: 50%
+		&:first-child
+			padding-left: 5%
+		&:last-child
+			padding: 10% 2.5%
+	&__title
+		font-size: 4rem
+		margin-bottom: 30px
+	&__number
+		display: block
+		margin-top: 24px
+		font-size: 2.4rem
+	&__btn
+		display: block
+		margin-top: 65px
+		font-size: 1.8rem
+		padding: 31px 82px
+		border-radius: 40px
+		border: 1px solid #000
+	&__map
+		width: 100%
+		height: 654px
+
+.address
+	display: block
+	font-style: normal
+	font-size: 2.4rem
+	&__subtitle
+		font-size: 1.4rem
+		display: block
+		margin-bottom: 10px
+
+.e-mail
+	display: block
+	&__subtitle
+		display: block
+		margin: 40px 0 15px
+	&__address
+		display: block
+		font-size: 2.4rem
 
 
 //-----------------------------------------MediaQuery------------------------------------------------------
