@@ -13,6 +13,9 @@
 			min-height: 800px
 
 @media screen and (max-width: 768px)
+	html
+		font-size: 7px
+
 	.container
 		width: 100%
 		padding: 0 60px
@@ -103,6 +106,22 @@
 		&__description
 			display: none
 
+	.contacts
+		&__wrap
+			flex-direction: column
+		&__item
+			width: 100%
+			&:first-child
+				margin-top: 75px
+		&__map
+			height: 550px
+		&__btn
+			font-size: 2rem
+			width: 70%
+			padding: 20px 0
+			margin-left: auto
+			margin-right: auto
+
 @media screen and (max-width: 425px)
 	html
 		font-size: 6px
@@ -112,16 +131,34 @@
 		max-width: 100%
 		padding: 0 10px
 	
+	.burger-btn_text
+		font-size: 2rem
+
 	.modal
 		&__logo
-			width: 144px
+			width: 165px
+			padding-left: 10px
+			&:focus
+				outline: none
+			&:active
+				outline: none
 		&__item
 			&:last-child
 				display: none
 
 	.nav
-		background-color: #1E1F23
 		top: 0
+		&__wrap
+			padding-top: 0
+		&__logo
+			width: 165px
+			padding-left: 10px
+			&:focus
+				outline: none
+			&:active
+				outline: none
+		&_bg-color_grey
+			background-color: #1E1F23
 		&__mobile
 			display: flex
 			flex-direction: column
@@ -133,22 +170,35 @@
 				display: block
 				width: 550px
 				height: 1px
-				background-color: #fff
 				margin-top: 5px
 				margin-left: -40px
+			&_after_black
+				&:after
+					background-color: #000
+			&_after_white
+				&:after
+					background-color: #fff
+
 		&__number
 			font-size: 2.5rem
 			display: flex
 			flex-direction: row
 			align-items: center
 			&:before
-				content: url('../img/nav__phone.svg')
+				content: ''
 				display: block
 				background-color: transparent
 				width: 15px
 				height: 15px
 				margin-right: 5px
-	
+			&_before_black
+				&:before
+					content: url('../img/phone_icon_black.svg')
+			&_before_white
+				&:before
+					content: url('../img/phone_icon_white.svg')
+
+
 	.header
 		&__item
 			min-height: 580px
@@ -170,9 +220,10 @@
 			line-height: 43px
 			font-size: 5rem
 			margin-top: 130px
+			margin-left: 20px
 		&__subtitle
-			margin: 14px 0
-			font-size: 2.2rem
+			margin: 14px 0 14px 20px
+			font-size: 2.5rem
 			line-height: 16px
 		&__btn
 			display: block
@@ -184,6 +235,8 @@
 			bottom: 17%
 			left: 50%
 			transform: translateX(-50%)
+		&__item 
+			height: 500px
 	
 	.steps
 		&__wrap
