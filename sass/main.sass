@@ -590,6 +590,106 @@
 	&__vector4
 		transform: translateY(50%) rotate(-80deg)
 
+.house
+	&__title
+		font-size: 4rem
+		line-height: 48px
+		color: #1E1F23
+		margin: 75px auto 120px
+		width: 100%
+		max-width: 1100px
+	&__parameters
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		width: 35%
+		list-style: none
+		padding: 22px 0 0 10px
+		width: 344px
+		margin: 0
+	&__description
+		font-size: 1.6rem
+		line-height: 19px
+		width: 100%
+		max-width: 1104px
+		margin: 45px 0 65px
+		span
+			display: block
+			&:first-child
+				font-size: 1.4rem
+				margin-bottom: 18px
+	&__content
+		width: 100%
+		max-width: 1100px
+		margin: 0 auto
+	&__item
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		flex-wrap: wrap
+	&__slider
+		width: 65%
+		img
+			width: 100%
+			height: 100%
+			display: block
+	&__parameter
+		width: 100%
+		max-width: 345px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		font-size: 1.4rem
+		line-height: 16px
+		margin: 18px auto
+		span
+			display: block
+			&:last-child
+				font-size: 1.8rem
+				line-height: 21px
+	&__btn
+		padding: 26px 49px
+		margin: 100px auto 0
+		display: inline-block
+		font-size: 2rem
+	&__dots
+		padding: 0
+		position: absolute
+		bottom: 10%
+		left: 50%
+		transform: translateX(-50%)
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		li
+			margin-right: 12px
+			width: 10px
+			height: 10px
+			display: block
+			border: none
+			background: linear-gradient(0deg, #636466, #636466), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF
+			border-radius: 50%
+			&.slick-active
+				background: #fff
+			&:last-child
+				margin-right: 0
+		button
+			display: none
+
 //-----------------------------------------MediaQuery------------------------------------------------------
 @import '_mediaq.sass'
 

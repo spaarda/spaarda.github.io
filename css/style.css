@@ -286,9 +286,7 @@ body {
   text-decoration: none; }
 
 .btn {
-  border: 1px solid #fff;
-  background-color: transparent;
-  border-radius: 40px; }
+  background-color: transparent; }
   .btn_color_white {
     color: #fff; }
   .btn_color_black {
@@ -1014,6 +1012,109 @@ body {
 
 .mechanics__vector4 {
   transform: translateY(50%) rotate(-80deg); }
+
+.house__title {
+  font-size: 4rem;
+  line-height: 48px;
+  color: #1E1F23;
+  margin: 75px auto 120px;
+  width: 100%;
+  max-width: 1100px; }
+
+.house__parameters {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  list-style: none;
+  padding: 22px 0 0 10px;
+  width: 344px;
+  margin: 0; }
+
+.house__description {
+  font-size: 1.6rem;
+  line-height: 19px;
+  width: 100%;
+  max-width: 1104px;
+  margin: 45px 0 65px; }
+  .house__description span {
+    display: block; }
+    .house__description span:first-child {
+      font-size: 1.4rem;
+      margin-bottom: 18px; }
+
+.house__content {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.house__item {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.house__slider {
+  width: 65%; }
+  .house__slider img {
+    width: 100%;
+    height: 100%;
+    display: block; }
+
+.house__parameter {
+  width: 100%;
+  max-width: 345px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  line-height: 16px;
+  margin: 18px auto; }
+  .house__parameter span {
+    display: block; }
+    .house__parameter span:last-child {
+      font-size: 1.8rem;
+      line-height: 21px; }
+
+.house__btn {
+  padding: 26px 49px;
+  margin: 100px auto 0;
+  display: inline-block;
+  font-size: 2rem; }
+
+.house__dots {
+  padding: 0;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row; }
+  .house__dots li {
+    margin-right: 12px;
+    width: 10px;
+    height: 10px;
+    display: block;
+    border: none;
+    background: linear-gradient(0deg, #636466, #636466), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+    border-radius: 50%; }
+    .house__dots li.slick-active {
+      background: #fff; }
+    .house__dots li:last-child {
+      margin-right: 0; }
+  .house__dots button {
+    display: none; }
 
 @media screen and (max-width: 1024px) {
   .container {
