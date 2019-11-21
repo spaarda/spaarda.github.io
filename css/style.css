@@ -14,7 +14,7 @@ body {
   width: 100%;
   margin: 0 auto;
   max-width: 1635px;
-  padding: 0 20px; }
+  padding: 0 30px; }
 
 @font-face {
   font-family: 'Gilroy Bold';
@@ -269,8 +269,7 @@ body {
       font-size: 2.8rem; }
 
 .title {
-  margin: 0;
-  font-size: 4rem; }
+  margin: 0; }
   .title_font-weigth_bold {
     font-family: 'Gilroy Bold'; }
 
@@ -589,6 +588,7 @@ body {
       height: auto; }
   .nav__item {
     width: 50%;
+    padding-right: 40px;
     position: relative;
     display: -moz-flex;
     display: -ms-flex;
@@ -812,8 +812,7 @@ body {
     display: inline-block;
     margin: 0;
     margin-top: 14px;
-    padding: 21px 34px;
-    border: 1px solid rgba(255, 255, 255, 0.59); }
+    padding: 21px 34px; }
   .shortAbout__model {
     display: -moz-flex;
     display: -ms-flex;
@@ -961,7 +960,8 @@ body {
 .mechanics__title {
   text-align: center;
   margin: 0;
-  margin-top: 200px; }
+  margin-top: 200px;
+  font-size: 4rem; }
 
 .mechanics__subtitle {
   margin: 0 auto;
@@ -1016,22 +1016,31 @@ body {
   transform: translateY(50%) rotate(-80deg); }
 
 @media screen and (max-width: 1024px) {
-  html {
-    font-size: 7.5px; }
+  .container {
+    width: 100%;
+    max-width: 950px;
+    padding: 0 30px; }
+  .top-menu__link {
+    font-size: 1.6rem; }
   .hero__title {
     margin-top: 135px;
     line-height: 85px; }
   .hero__btn {
     margin-bottom: 40px; }
   .header__item {
-    min-height: 800px; } }
+    min-height: 800px; }
+  .mechanics__subtitle {
+    font-size: 1.6rem; } }
 
 @media screen and (max-width: 768px) {
   html {
     font-size: 7px; }
   .container {
     width: 100%;
+    max-width: 10000px;
     padding: 0 60px; }
+  .nav__item {
+    padding-right: 0px; }
   .burger-btn_text {
     margin-right: 15px; }
   .burger-btn_text_modal {
@@ -1119,17 +1128,21 @@ body {
     text-align: center; }
   .about__btn {
     margin: 44px auto 0; }
+  .about__text {
+    font-size: 2rem; }
   .mechanics__title {
     margin-top: 100px; }
   .mechanics__content {
-    margin: 100px auto; } }
+    margin: 100px auto; }
+  .mechanics__subtitle {
+    font-size: 2rem; } }
 
 @media screen and (max-width: 425px) {
   html {
     font-size: 6px; }
   .container {
     width: 100%;
-    max-width: 100%;
+    max-width: 1000px;
     padding: 0 10px; }
   .burger-btn_text {
     font-size: 2rem; }
@@ -1140,12 +1153,16 @@ body {
       outline: none; }
     .modal__logo:active {
       outline: none; }
+  .modal__header_item {
+    padding-right: 20px; }
   .modal__item:last-child {
     display: none; }
   .nav {
     top: 0; }
     .nav__wrap {
       padding-top: 0; }
+    .nav__item {
+      padding-right: 15px; }
     .nav__logo {
       width: 165px;
       padding-left: 10px; }
@@ -1164,10 +1181,10 @@ body {
       .nav__mobile:after {
         content: '';
         display: block;
-        width: 550px;
+        width: 800px;
         height: 1px;
         margin-top: 5px;
-        margin-left: -40px; }
+        margin-left: 30%; }
       .nav__mobile_after_black:after {
         background-color: #000; }
       .nav__mobile_after_white:after {
@@ -1204,9 +1221,9 @@ body {
       line-height: 43px;
       font-size: 5rem;
       margin-top: 130px;
-      margin-left: 20px; }
+      margin-left: 2%; }
     .hero__subtitle {
-      margin: 14px 0 14px 20px;
+      margin: 14px 0 14px 2%;
       font-size: 2.5rem;
       line-height: 16px; }
     .hero__btn {
@@ -1346,4 +1363,52 @@ body {
       .footer__copyblock:last-child {
         margin-top: 15px;
         font-size: 2rem;
-        font-family: 'Gilroy Bold'; } }
+        font-family: 'Gilroy Bold'; }
+  .about__content {
+    flex-direction: column; }
+  .about__title {
+    margin-bottom: 5px; }
+  .about__text {
+    font-size: 2rem;
+    padding: 0 15px; }
+  .about__item {
+    width: 100%; }
+    .about__item:first-child {
+      display: block;
+      margin: 0 0 47px 0; }
+    .about__item:last-child {
+      max-width: 10000px; }
+    .about__item img {
+      width: 95%; }
+  .about__btn {
+    font-size: 2.5rem; }
+  .mechanics__title {
+    font-size: 3rem;
+    margin-top: 57px; }
+  .mechanics__content {
+    margin: 40px auto; }
+  .mechanics__item {
+    flex-basis: 49%;
+    height: 170px; }
+    .mechanics__item:nth-child(even) {
+      justify-content: flex-start; }
+  .mechanics__subtitle {
+    font-size: 2.5rem; }
+  .mechanics__vector {
+    bottom: 0;
+    right: 0; }
+  .mechanics__vector1 {
+    right: -70px;
+    bottom: 50%;
+    transform: translateY(50%) rotate(-50deg); }
+  .mechanics__vector2 {
+    transform: translateY(50%) rotate(130deg) scale(1, -1);
+    right: -20px; }
+  .mechanics__vector3 {
+    left: -50px;
+    bottom: 0px;
+    transform: translateY(50%) rotate(30deg); }
+  .mechanics__vector4 {
+    transform: translateY(50%) rotate(40deg) scale(-1, 1);
+    left: -70px;
+    bottom: 55%; } }
