@@ -8,6 +8,7 @@ $('.house__slider').slick({
 	dots: true,
 	dotsClass: 'house__dots',
 	draggable: false,
+	adaptiveHeight: true,
 });
 
 $('.burger-btn').on('click' , function() {
