@@ -300,6 +300,8 @@ body {
     border: 1px solid #fff; }
   .btn_border_black {
     border: 1px solid #000; }
+  .btn_text-decoration_none {
+    text-decoration: none; }
   .btn:focus {
     outline: none; }
   .btn:active {
@@ -664,43 +666,24 @@ body {
     display: block;
     margin-right: 16px; }
 
-.projects {
+.index-projects {
   width: 100%;
   background-color: #fff; }
-  .projects__wrap {
+  .index-projects__wrap {
     width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .projects__content {
-    width: 100%;
-    max-width: 1230px;
-    margin: 0 auto;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-  .projects__title {
+  .index-projects__title {
     font-size: 5rem;
     color: #1E1F23;
     margin: 130px 0 78px; }
-  .projects__item {
-    width: 30%;
-    margin: 0 auto; }
-  .projects__imgblock {
-    width: 100%;
-    position: relative;
-    overflow: hidden; }
-    .projects__imgblock img {
-      width: 100%;
-      height: 100%; }
-  .projects__showAll {
+  .index-projects__showAll {
     color: #1E1F23;
     font-size: 2rem;
     display: block;
@@ -708,30 +691,6 @@ body {
     text-decoration: underline;
     border: none;
     background-color: transparent; }
-  .projects__btn {
-    display: block;
-    color: #000;
-    font-size: 1.8rem;
-    margin: 0 auto;
-    padding: 24px 52px;
-    border: 1px solid rgba(255, 255, 255, 0.59);
-    background: rgba(255, 255, 255, 0.59); }
-  .projects__itemsubtitle {
-    display: block;
-    color: #1E1F23;
-    margin: 22px 0; }
-  .projects__itemtitle {
-    color: #000;
-    font-size: 2.4rem;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-    .projects__itemtitle span {
-      display: block; }
 
 .shortAbout {
   width: 100%;
@@ -1156,6 +1115,14 @@ body {
     transition: all .3s; }
     .projects-list__item-hover:hover {
       opacity: 1; }
+  .projects-list__btn {
+    display: block;
+    color: #000;
+    font-size: 1.8rem;
+    margin: 0 auto;
+    padding: 24px 52px;
+    border: 1px solid rgba(255, 255, 255, 0.59);
+    background: rgba(255, 255, 255, 0.59); }
   .projects-list__title {
     width: 100%;
     display: -moz-flex;
@@ -1171,6 +1138,11 @@ body {
     color: #1E1F23;
     margin: 24px 0 19px;
     display: block; }
+
+.projects__wrap {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto; }
 
 @media screen and (max-width: 1024px) {
   .container {
