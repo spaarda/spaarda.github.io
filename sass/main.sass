@@ -664,7 +664,6 @@
 	display: -o-flex
 	display: flex
 	flex-direction: row
-	justify-content: space-between
 	flex-wrap: wrap
 	max-width: 1110px
 	width: 100%
@@ -672,6 +671,9 @@
 		position: relative
 	&__item
 		width: 30%
+		margin: 0 auto
+		margin-bottom: 120px
+		display: none
 		img
 			width: 100%
 			height: 100%
@@ -690,10 +692,12 @@
 		flex-direction: column
 		justify-content: center
 		opacity: 0
-		transition: all .3s 
+		transition: all .5s 
 		&:hover
 			opacity: 1
-	&__btn
+	&__houses
+		display: block
+	&__link
 		display: block
 		color: #000
 		font-size: 1.8rem
@@ -717,12 +721,46 @@
 		color: #1E1F23
 		margin: 24px 0 19px
 		display: block
+	&__hideall
+		display: none
 
 .projects
+	&__title
+		margin: 0
+		margin-top: 70px
+		width: 100%
+		max-width: 874px
+		font-size: 4rem
+		line-height: 48px
+		color: #1E1F23
 	&__wrap
 		width: 100%
 		max-width: 1110px
 		margin: 0 auto
+	&__tabsblock
+		width: 100%
+		margin: 0
+	&__tabs
+		padding: 0
+		list-style: none
+		width: 100%
+		margin: 46px 0 30px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+	&__tab
+		margin-right: 57px
+	&__btn
+		border: none
+		background-color: transparent
+		font-size: 1.8rem
+		padding: 0
+		&_active
+			text-decoration: underline
+
 
 //-----------------------------------------MediaQuery------------------------------------------------------
 @import '_mediaq.sass'

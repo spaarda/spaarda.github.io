@@ -287,6 +287,10 @@ body {
 
 .a {
   text-decoration: none; }
+  .a_underline {
+    text-decoration: underline; }
+  .a_border-radius {
+    border-radius: 40px; }
 
 .btn {
   background-color: transparent; }
@@ -1087,14 +1091,16 @@ body {
   display: -o-flex;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1110px;
   width: 100%; }
   .projects-list__imgblock {
     position: relative; }
   .projects-list__item {
-    width: 30%; }
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    display: none; }
     .projects-list__item img {
       width: 100%;
       height: 100%; }
@@ -1112,10 +1118,12 @@ body {
     flex-direction: column;
     justify-content: center;
     opacity: 0;
-    transition: all .3s; }
+    transition: all .5s; }
     .projects-list__item-hover:hover {
       opacity: 1; }
-  .projects-list__btn {
+  .projects-list__houses {
+    display: block; }
+  .projects-list__link {
     display: block;
     color: #000;
     font-size: 1.8rem;
@@ -1138,11 +1146,48 @@ body {
     color: #1E1F23;
     margin: 24px 0 19px;
     display: block; }
+  .projects-list__hideall {
+    display: none; }
+
+.projects__title {
+  margin: 0;
+  margin-top: 70px;
+  width: 100%;
+  max-width: 874px;
+  font-size: 4rem;
+  line-height: 48px;
+  color: #1E1F23; }
 
 .projects__wrap {
   width: 100%;
   max-width: 1110px;
   margin: 0 auto; }
+
+.projects__tabsblock {
+  width: 100%;
+  margin: 0; }
+
+.projects__tabs {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  margin: 46px 0 30px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row; }
+
+.projects__tab {
+  margin-right: 57px; }
+
+.projects__btn {
+  border: none;
+  background-color: transparent;
+  font-size: 1.8rem;
+  padding: 0; }
+  .projects__btn_active {
+    text-decoration: underline; }
 
 @media screen and (max-width: 1024px) {
   .container {
@@ -1218,11 +1263,11 @@ body {
     text-align: center; }
     .section__title:after {
       background-color: transparent; }
-  .projects__item {
+  .index-projects__item {
     width: 35%; }
-    .projects__item:last-child {
+    .index-projects__item:last-child {
       display: none; }
-  .projects__btn {
+  .index-projects__btn {
     font-size: 1.4rem;
     padding: 18px 47px; }
   .footer__content {
@@ -1293,7 +1338,11 @@ body {
     font-size: 3rem;
     margin-top: 90px; }
   .may-interest__title {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  .projects__tabs {
+    justify-content: space-between; }
+  .projects__tab {
+    margin: 0; } }
 
 @media screen and (max-width: 425px) {
   html {
