@@ -1,5 +1,5 @@
+"use strict"
 $(document).ready( function() {
-	"use strict"
 
 	$('.header__slider').slick({
 		dots: true,

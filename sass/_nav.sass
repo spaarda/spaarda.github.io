@@ -1,0 +1,110 @@
+.nav
+	width: 100%
+	background-color: transparent
+	@media screen and (max-width: 425px)
+		top: 0
+
+	&__wrap
+		width: 100%
+		padding-top: 20px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		@media screen and (max-width: 425px)
+			padding-top: 0
+
+	&_position_absolute
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 15
+	&__mobile
+		display: none
+	&__logo
+		width: 274px
+		height: 58px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		justify-content: center
+		img
+			width: 100%
+			height: auto
+		&:focus
+			outline: none
+		&:active
+			outline: none
+		@media screen and (max-width: 425px)
+			width: 165px
+			padding-left: 10px
+
+	&__item
+		width: 50%
+		padding-right: 40px
+		position: relative
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		align-items: center
+		@media screen and (max-width: 768px)
+			padding-right: 0
+		@media screen and (max-width: 425px)
+			padding-right: 15px
+		@media screen and (max-width: 325px)
+			padding-right: 30px
+
+	&__mobile
+		@media screen and (max-width: 425px)
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			margin-top: 4px
+			&:after
+				content: ''
+				display: block
+				width: 800px
+				height: 1px
+				margin-top: 5px
+				margin-left: 30%
+			&_after_black
+				&:after
+					background-color: #000
+			&_after_white
+				&:after
+					background-color: #fff
+
+	&__number
+		@media screen and (max-width: 425px)
+			font-size: 2.5rem
+			display: flex
+			flex-direction: row
+			align-items: center
+			&:before
+				content: ''
+				display: block
+				background-color: transparent
+				width: 15px
+				height: 15px
+				margin-right: 5px
+			&_before_black
+				&:before
+					content: url('../img/phone_icon_black.svg')
+			&_before_white
+				&:before
+					content: url('../img/phone_icon_white.svg')
+
+	&_bg-color_grey
+		@media screen and (max-width: 425px)
+			background-color: #1E1F23

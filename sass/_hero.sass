@@ -1,0 +1,111 @@
+.hero
+	width: 100%
+	@media screen and (max-width: 425px)
+		padding: 0 10px
+	@media screen and (max-width: 325px)
+		padding: 0
+
+	&__title
+		margin-top: 210px
+		font-size: 10rem
+		line-height: 119px
+		display: block
+		text-transform: uppercase
+		@media screen and (max-width: 1024px)
+			margin-top: 155px
+			line-height: 85px
+		@media screen and (max-width: 768px)
+			line-height: 75px
+			margin-top: 150px
+		@media screen and (max-width: 425px)
+			line-height: 43px
+			font-size: 5rem
+			margin-top: 130px
+			margin-left: 2%
+		@media screen and (max-width: 325px)
+			margin-left: 0
+
+	&__item
+		margin-left: 7%
+		position: relative
+		height: 780px
+		&:active
+			outline: none
+		&:focus
+			outline: none
+		@media screen and (max-width: 1024px)
+			margin-left: 3%
+		@media screen and (max-width: 768px)
+			margin: 0
+			height: 680px
+		@media screen and (max-width: 425px)
+			height: 500px
+
+	&__subtitle
+		display: block
+		font-size: 2.4rem
+		line-height: 24px
+		margin: 55px 0
+		@media screen and (max-width: 768px)
+			line-height: 21px
+		@media screen and (max-width: 425px)
+			margin: 14px 0 14px 2%
+			font-size: 2.5rem
+			line-height: 16px
+		@media screen and (max-width: 325px)
+			margin-left: 0
+
+	&__dots
+		padding: 0
+		position: absolute
+		bottom: 13%
+		left: 50%
+		transform: translateX(-50%)
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		@media screen and (max-width: 768px)
+			bottom: 5%
+
+		li
+			margin-right: 12px
+			width: 18px
+			height: 18px
+			display: block
+			border: none
+			background: linear-gradient(0deg, #636466, #636466), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF
+			border-radius: 50%
+			&.slick-active
+				background: #fff
+			&:last-child
+				margin-right: 0
+		button
+			display: none
+
+	&__btn
+		position: absolute
+		bottom: 25%
+		left: 0
+		font-size: 2.4rem
+		padding: 26px 29px 30px
+		@media screen and (max-width: 1024px)
+			margin-bottom: 40px
+		@media screen and (max-width: 768px)
+			font-size: 2.5rem
+			padding: 20px 31px
+			margin-bottom: 90px
+		@media screen and (max-width: 425px)
+			display: block
+			font-size: 3rem
+			white-space: nowrap
+			padding: 22px 36px
+			margin: 0 auto
+			position: absolute
+			bottom: 17%
+			left: 50%
+			transform: translateX(-50%)
+
+

@@ -1,6 +1,9 @@
 .slick
 	&-prev
 		margin-right: 63px
+		@media screen and (max-width: 425px)
+			margin-right: 80%
+			
 	&-next
 		transform: rotate(180deg)
 	&-arrow
@@ -19,5 +22,13 @@
 		color: transparent
 		&:focus,&:active
 			outline: none
+		@media screen and (max-width: 768px)
+			right: 60px
+		@media screen and (max-width: 425px)
+			width: 40px
+			height: 27px
+			top: 60%
+			right: 4%
+
 	&-list
 		overflow-y: visible
