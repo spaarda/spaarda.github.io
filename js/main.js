@@ -20,7 +20,7 @@ $(document).ready( function() {
 
 	$('.projects__houses-tab').on('click', function(){
 		hideAll();
-		removeActive();
+		removeBtnActive();
 		$(this).addClass('projects__btn_active');
 		showProjects('.projects-list__houses');
 	});
@@ -28,7 +28,7 @@ $(document).ready( function() {
 
 	$('.projects__cottages-tab').on('click', function(){
 		hideAll();
-		removeActive();
+		removeBtnActive();
 		$(this).addClass('projects__btn_active');
 		showProjects('.projects-list__cottages');
 	});
@@ -36,7 +36,7 @@ $(document).ready( function() {
 
 	$('.projects__baths-tab').on('click', function(){
 		hideAll();
-		removeActive();
+		removeBtnActive();
 		$(this).addClass('projects__btn_active');
 		showProjects('.projects-list__baths');
 	});
@@ -44,7 +44,7 @@ $(document).ready( function() {
 
 	$('.projects__garden-houses-tab').on('click', function(){
 		hideAll();
-		removeActive();
+		removeBtnActive();
 		$(this).addClass('projects__btn_active');
 		showProjects('.projects-list__garden-houses');
 	});
@@ -52,7 +52,7 @@ $(document).ready( function() {
 
 	$('.projects__other-tab').on('click', function(){
 		hideAll();
-		removeActive();
+		removeBtnActive();
 		$(this).addClass('projects__btn_active');
 		showProjects('.projects-list__other');
 	});
@@ -67,15 +67,15 @@ $(document).ready( function() {
 		};
 		for (var key in projectsLists) {
 			let test = projectsLists[key];
-			$(test).css('display','none');
+			$(test).removeClass('projects-list_active');
 		}
 	};
 
 	function showProjects(a) {
-		$(a).css('display','inline-block');
+		$(a).addClass('projects-list_active');
 	};
 
-	function removeActive() {
+	function removeBtnActive() {
 		$('.projects__btn').removeClass('projects__btn_active');
 	};
 })
